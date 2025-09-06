@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(rm:*)",
+      "Bash(yarn dev:*)",
+      "Bash(yarn build)",
+      "Bash(yarn preview:*)",
+      "Bash(npm run hash-questions:*)",
+      "Bash(npm run build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

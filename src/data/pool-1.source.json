@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q001",
+    "prompt": "日本の首都は？",
+    "type": "text",
+    "acceptedAnswers": ["とうきょう", "tokyo", "東京"],
+    "tags": ["geography", "japan"]
+  },
+  {
+    "id": "q002",
+    "prompt": "1 + 1 = ?",
+    "type": "text",
+    "acceptedAnswers": ["2", "に", "二"],
+    "tags": ["math", "basic"]
+  },
+  {
+    "id": "q003",
+    "prompt": "猫の鳴き声は？",
+    "type": "text",
+    "acceptedAnswers": ["にゃー", "にゃあ", "ニャー"],
+    "tags": ["animals", "sounds"]
+  },
+  {
+    "id": "q004", 
+    "prompt": "地球で一番高い山は？",
+    "type": "text",
+    "acceptedAnswers": ["えべれすと", "エベレスト", "everest"],
+    "tags": ["geography", "mountains"]
+  },
+  {
+    "id": "q005",
+    "prompt": "一年は何日？",
+    "type": "text",
+    "acceptedAnswers": ["365", "365日", "365にち"],
+    "tags": ["time", "general"]
+  },
+  {
+    "id": "q006",
+    "prompt": "水の化学式は？",
+    "type": "text", 
+    "acceptedAnswers": ["h2o", "みず", "水"],
+    "tags": ["chemistry", "basic"]
+  },
+  {
+    "id": "q007",
+    "prompt": "太陽系で一番大きな惑星は？",
+    "type": "text",
+    "acceptedAnswers": ["もくせい", "木星", "jupiter"],
+    "tags": ["astronomy", "planets"]
+  },
+  {
+    "id": "q008",
+    "prompt": "日本の国鳥は？",
+    "type": "text",
+    "acceptedAnswers": ["きじ", "雉", "pheasant"],
+    "tags": ["japan", "birds"]
+  },
+  {
+    "id": "q009",
+    "prompt": "オリンピックは何年に一度開催される？",
+    "type": "text",
+    "acceptedAnswers": ["4", "よん", "四", "4年"],
+    "tags": ["sports", "olympics"]
+  },
+  {
+    "id": "q010",
+    "prompt": "人間の心臓は何個ある？",
+    "type": "text",
+    "acceptedAnswers": ["1", "ひとつ", "一つ", "1つ", "1個"],
+    "tags": ["biology", "human"]
+  },
+  {
+    "id": "q011",
+    "prompt": "日本の通貨単位は？",
+    "type": "text",
+    "acceptedAnswers": ["えん", "円", "yen"],
+    "tags": ["japan", "money"]
+  },
+  {
+    "id": "q012", 
+    "prompt": "光の速度は秒速何キロメートル？",
+    "type": "text",
+    "acceptedAnswers": ["30万", "300000", "さんじゅうまん"],
+    "tags": ["physics", "speed"]
+  }
+]

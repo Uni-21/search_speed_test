@@ -1,0 +1,21 @@
+{
+  "title": "検索解決スピードテスト",
+  "description": "出題される問題に対し、いかに素早く正答できるかを競うゲームです。生成AI、Google検索、SNS、自身の知識など、あらゆる手段を使って解答してください。",
+  "start": "START",
+  "question": "問題",
+  "answer_placeholder": "ここに回答を入力",
+  "skip": "スキップ",
+  "next": "次へ",
+  "finish": "終了",
+  "time": "経過時間",
+  "result": {
+    "title": "結果",
+    "time": "総経過時間",
+    "accuracy": "正答率",
+    "skipped": "未回答",
+    "score": "総合点",
+    "grade": "グレード",
+    "speed_score": "速度スコア"
+  },
+  "restart": "もう一度挑戦"
+}
