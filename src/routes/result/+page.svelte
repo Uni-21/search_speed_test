@@ -10,16 +10,44 @@
   let result: Result | null = null;
   
   $: session = $quizStore;
+  
+  // リアクティブに結果を再計算
+  $: if (session.status === 'finished' && !result && session.startedAt) {
+    console.log('Reactive calculation triggered');
+    if (session.finishedAt) {
+      const totalTimeMs = session.finishedAt - session.startedAt;
+      result = calculateResult(session.answers, totalTimeMs);
+    } else {
+      result = calculateResult(session.answers, 300000);
+    }
+    console.log('Reactive result:', result);
+  }
 
   onMount(() => {
+    console.log('Result page mounted, session:', session);
+    
     if (session.status !== 'finished') {
+      console.log('Session not finished, redirecting to home');
       goto('/');
       return;
     }
 
+    console.log('Session status is finished');
+    console.log('startedAt:', session.startedAt);
+    console.log('finishedAt:', session.finishedAt);
+    console.log('answers:', session.answers);
+
     if (session.startedAt && session.finishedAt) {
       const totalTimeMs = session.finishedAt - session.startedAt;
+      console.log('Calculating result with totalTimeMs:', totalTimeMs);
       result = calculateResult(session.answers, totalTimeMs);
+      console.log('Result calculated:', result);
+    } else {
+      // フォールバック: finishedAtが設定されていない場合
+      console.error('Missing timing data, using fallback calculation');
+      console.log('startedAt:', session.startedAt, 'finishedAt:', session.finishedAt);
+      result = calculateResult(session.answers, 300000); // 5分としてフォールバック
+      console.log('Fallback result calculated:', result);
     }
   });
 

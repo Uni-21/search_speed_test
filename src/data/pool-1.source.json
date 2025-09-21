@@ -1,86 +1,1352 @@
 [
   {
-    "id": "q001",
+    "id": "k1_001",
     "prompt": "日本の首都は？",
     "type": "text",
     "acceptedAnswers": ["とうきょう", "tokyo", "東京"],
-    "tags": ["geography", "japan"]
+    "tags": ["geography", "japan"],
+    "genre": "知識",
+    "difficulty": 1
   },
   {
-    "id": "q002",
-    "prompt": "1 + 1 = ?",
-    "type": "text",
-    "acceptedAnswers": ["2", "に", "二"],
-    "tags": ["math", "basic"]
-  },
-  {
-    "id": "q003",
+    "id": "k1_002", 
     "prompt": "猫の鳴き声は？",
     "type": "text",
-    "acceptedAnswers": ["にゃー", "にゃあ", "ニャー"],
-    "tags": ["animals", "sounds"]
+    "acceptedAnswers": ["にゃー", "にゃあ", "ニャー", "みゃー"],
+    "tags": ["animals", "sounds"],
+    "genre": "知識",
+    "difficulty": 1
   },
   {
-    "id": "q004", 
-    "prompt": "地球で一番高い山は？",
-    "type": "text",
-    "acceptedAnswers": ["えべれすと", "エベレスト", "everest"],
-    "tags": ["geography", "mountains"]
-  },
-  {
-    "id": "q005",
-    "prompt": "一年は何日？",
-    "type": "text",
-    "acceptedAnswers": ["365", "365日", "365にち"],
-    "tags": ["time", "general"]
-  },
-  {
-    "id": "q006",
-    "prompt": "水の化学式は？",
+    "id": "k1_003",
+    "prompt": "太陽の色は？",
     "type": "text", 
-    "acceptedAnswers": ["h2o", "みず", "水"],
-    "tags": ["chemistry", "basic"]
+    "acceptedAnswers": ["きいろ", "黄色", "イエロー", "yellow"],
+    "tags": ["colors", "sun"],
+    "genre": "知識",
+    "difficulty": 1
   },
   {
-    "id": "q007",
-    "prompt": "太陽系で一番大きな惑星は？",
-    "type": "text",
-    "acceptedAnswers": ["もくせい", "木星", "jupiter"],
-    "tags": ["astronomy", "planets"]
-  },
-  {
-    "id": "q008",
-    "prompt": "日本の国鳥は？",
-    "type": "text",
-    "acceptedAnswers": ["きじ", "雉", "pheasant"],
-    "tags": ["japan", "birds"]
-  },
-  {
-    "id": "q009",
-    "prompt": "オリンピックは何年に一度開催される？",
-    "type": "text",
-    "acceptedAnswers": ["4", "よん", "四", "4年"],
-    "tags": ["sports", "olympics"]
-  },
-  {
-    "id": "q010",
-    "prompt": "人間の心臓は何個ある？",
-    "type": "text",
-    "acceptedAnswers": ["1", "ひとつ", "一つ", "1つ", "1個"],
-    "tags": ["biology", "human"]
-  },
-  {
-    "id": "q011",
+    "id": "k1_004",
     "prompt": "日本の通貨単位は？",
     "type": "text",
     "acceptedAnswers": ["えん", "円", "yen"],
-    "tags": ["japan", "money"]
+    "tags": ["japan", "money"],
+    "genre": "知識",
+    "difficulty": 1
   },
   {
-    "id": "q012", 
-    "prompt": "光の速度は秒速何キロメートル？",
+    "id": "k1_005",
+    "prompt": "犬の鳴き声は？", 
     "type": "text",
-    "acceptedAnswers": ["30万", "300000", "さんじゅうまん"],
-    "tags": ["physics", "speed"]
+    "acceptedAnswers": ["わんわん", "ワンワン", "わん", "ワン", "bowwow"],
+    "tags": ["animals", "sounds"],
+    "genre": "知識",
+    "difficulty": 1
+  },
+  {
+    "id": "k1_006",
+    "prompt": "アメリカの首都は？",
+    "type": "text",
+    "acceptedAnswers": ["わしんとん", "ワシントン", "washington"],
+    "tags": ["geography", "usa"],
+    "genre": "知識",
+    "difficulty": 1
+  },
+  {
+    "id": "k1_007",
+    "prompt": "一週間は何日？",
+    "type": "text",
+    "acceptedAnswers": ["7", "なな", "七", "7日", "なのか"],
+    "tags": ["time", "basic"],
+    "genre": "知識", 
+    "difficulty": 1
+  },
+  {
+    "id": "k1_008",
+    "prompt": "雪の色は？",
+    "type": "text",
+    "acceptedAnswers": ["しろ", "白", "しろい", "白い", "white"],
+    "tags": ["colors", "nature"],
+    "genre": "知識",
+    "difficulty": 1
+  },
+  {
+    "id": "k1_009",
+    "prompt": "海の色は？",
+    "type": "text",
+    "acceptedAnswers": ["あお", "青", "あおい", "青い", "blue"],
+    "tags": ["colors", "nature"], 
+    "genre": "知識",
+    "difficulty": 1
+  },
+  {
+    "id": "k1_010",
+    "prompt": "パンを作る粉は？",
+    "type": "text",
+    "acceptedAnswers": ["こむぎこ", "小麦粉", "wheat flour", "flour"],
+    "tags": ["cooking", "ingredients"],
+    "genre": "知識",
+    "difficulty": 1
+  },
+  {
+    "id": "k2_001",
+    "prompt": "地球で一番高い山は？",
+    "type": "text",
+    "acceptedAnswers": ["えべれすと", "エベレスト", "everest"],
+    "tags": ["geography", "mountains"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_002",
+    "prompt": "一年は何日？",
+    "type": "text",
+    "acceptedAnswers": ["365", "365日", "365にち"],
+    "tags": ["time", "general"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_003",
+    "prompt": "水の化学式は？",
+    "type": "text",
+    "acceptedAnswers": ["h2o", "みず", "水"],
+    "tags": ["chemistry", "basic"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_004",
+    "prompt": "太陽系で一番大きな惑星は？",
+    "type": "text",
+    "acceptedAnswers": ["もくせい", "木星", "jupiter"],
+    "tags": ["astronomy", "planets"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_005",
+    "prompt": "オリンピックは何年に一度開催される？",
+    "type": "text",
+    "acceptedAnswers": ["4", "よん", "四", "4年"],
+    "tags": ["sports", "olympics"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_006",
+    "prompt": "人間の心臓は何個ある？",
+    "type": "text",
+    "acceptedAnswers": ["1", "ひとつ", "一つ", "1つ", "1個"],
+    "tags": ["biology", "human"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_007",
+    "prompt": "地球の衛星の名前は？",
+    "type": "text",
+    "acceptedAnswers": ["つき", "月", "moon"],
+    "tags": ["astronomy", "earth"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_008",
+    "prompt": "日本の国花は？",
+    "type": "text",
+    "acceptedAnswers": ["さくら", "桜", "cherry blossom"],
+    "tags": ["japan", "flowers"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_009",
+    "prompt": "光の速度は秒速約何万キロメートル？",
+    "type": "text",
+    "acceptedAnswers": ["30", "30万", "三十万", "さんじゅうまん"],
+    "tags": ["physics", "speed"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k2_010",
+    "prompt": "鉄の元素記号は？",
+    "type": "text",
+    "acceptedAnswers": ["fe", "iron"],
+    "tags": ["chemistry", "elements"],
+    "genre": "知識",
+    "difficulty": 2
+  },
+  {
+    "id": "k3_001",
+    "prompt": "日本の国鳥は？",
+    "type": "text",
+    "acceptedAnswers": ["きじ", "雉", "pheasant"],
+    "tags": ["japan", "birds"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_002",
+    "prompt": "DNA の二重らせん構造を発見した科学者は？（姓のみ）",
+    "type": "text",
+    "acceptedAnswers": ["watson", "crick", "ワトソン", "クリック"],
+    "tags": ["biology", "scientists"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_003",
+    "prompt": "ローマ帝国初代皇帝の名前は？",
+    "type": "text", 
+    "acceptedAnswers": ["augustus", "オーガスタス", "アウグストゥス"],
+    "tags": ["history", "rome"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_004",
+    "prompt": "ピカソの代表作「ゲルニカ」が描かれた戦争は？",
+    "type": "text",
+    "acceptedAnswers": ["スペイン内戦", "すぺいんないせん", "spanish civil war"],
+    "tags": ["art", "history"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_005",
+    "prompt": "1192年に鎌倉幕府を開いた人物は？",
+    "type": "text",
+    "acceptedAnswers": ["源頼朝", "みなもとのよりとも", "よりとも"],
+    "tags": ["history", "japan"],
+    "genre": "知識", 
+    "difficulty": 3
+  },
+  {
+    "id": "k3_006",
+    "prompt": "ベートーヴェンの交響曲第9番の通称は？",
+    "type": "text",
+    "acceptedAnswers": ["合唱", "がっしょう", "choral", "歓喜の歌"],
+    "tags": ["music", "classical"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_007", 
+    "prompt": "地球の大気の約78%を占める気体は？",
+    "type": "text",
+    "acceptedAnswers": ["窒素", "ちっそ", "nitrogen", "n2"],
+    "tags": ["chemistry", "atmosphere"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_008",
+    "prompt": "2024年パリオリンピックで最多金メダルを獲得した国は？",
+    "type": "text",
+    "acceptedAnswers": ["アメリカ", "あめりか", "usa", "米国"],
+    "tags": ["sports", "olympics"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_009",
+    "prompt": "ノーベル物理学賞を受賞した日本人で「青色LED」の研究者は？（姓のみ）",
+    "type": "text",
+    "acceptedAnswers": ["中村", "なかむら", "nakamura"],
+    "tags": ["science", "nobel"],
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k3_010",
+    "prompt": "シェイクスピア四大悲劇の一つで「デンマークの王子」が主人公の作品は？",
+    "type": "text",
+    "acceptedAnswers": ["ハムレット", "はむれっと", "hamlet"],
+    "tags": ["literature", "shakespeare"], 
+    "genre": "知識",
+    "difficulty": 3
+  },
+  {
+    "id": "k4_001",
+    "prompt": "1945年に国際連合が設立された都市は？",
+    "type": "text",
+    "acceptedAnswers": ["サンフランシスコ", "さんふらんしすこ", "san francisco"],
+    "tags": ["history", "international"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_002",
+    "prompt": "量子力学の「不確定性原理」を提唱した物理学者は？（姓のみ）",
+    "type": "text",
+    "acceptedAnswers": ["ハイゼンベルク", "はいぜんべるく", "heisenberg"],
+    "tags": ["physics", "quantum"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_003",
+    "prompt": "『百年の孤独』の作者で、ノーベル文学賞を受賞したコロンビアの作家は？（姓のみ）",
+    "type": "text",
+    "acceptedAnswers": ["マルケス", "まるけす", "marquez"],
+    "tags": ["literature", "nobel"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_004",
+    "prompt": "中国の戦国時代の思想家で「性善説」を提唱したのは？",
+    "type": "text",
+    "acceptedAnswers": ["孟子", "もうし", "mencius"],
+    "tags": ["philosophy", "china"],
+    "genre": "知識", 
+    "difficulty": 4
+  },
+  {
+    "id": "k4_005",
+    "prompt": "1969年に人類初の月面着陸を果たしたアポロ計画の指令船操縦士は？（姓のみ）",
+    "type": "text",
+    "acceptedAnswers": ["コリンズ", "こりんず", "collins"],
+    "tags": ["space", "apollo"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_006",
+    "prompt": "「オペラ座の怪人」の舞台となったパリのオペラ座の正式名称は？",
+    "type": "text",
+    "acceptedAnswers": ["ガルニエ宮", "がるにえきゅう", "palais garnier"],
+    "tags": ["architecture", "opera"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_007",
+    "prompt": "日本の古典『源氏物語』の作者は？",
+    "type": "text",
+    "acceptedAnswers": ["紫式部", "むらさきしきぶ"],
+    "tags": ["literature", "japan"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_008",
+    "prompt": "「進化論」を提唱したダーウィンが乗船した探検船の名前は？",
+    "type": "text",
+    "acceptedAnswers": ["ビーグル号", "びーぐるごう", "beagle"],
+    "tags": ["biology", "exploration"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_009",
+    "prompt": "フランス革命で断頭台の露と消えた王妃の名前は？",
+    "type": "text",
+    "acceptedAnswers": ["マリーアントワネット", "marie antoinette"],
+    "tags": ["history", "france"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k4_010",
+    "prompt": "ゴッホの代表作「星月夜」が描かれた精神病院がある南仏の町は？",
+    "type": "text",
+    "acceptedAnswers": ["サンレミ", "さんれみ", "saint remy"],
+    "tags": ["art", "geography"],
+    "genre": "知識",
+    "difficulty": 4
+  },
+  {
+    "id": "k5_001",
+    "prompt": "1347年からヨーロッパを襲った黒死病（ペスト）の病原菌を発見した日本の細菌学者は？",
+    "type": "text",
+    "acceptedAnswers": ["北里柴三郎", "きたさとしばさぶろう"],
+    "tags": ["medicine", "history"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_002",
+    "prompt": "量子力学において「波動関数の収束」を表すシュレーディンガー方程式の時間依存版で、右辺にある定数は？",
+    "type": "text", 
+    "acceptedAnswers": ["プランク定数", "ぷらんくていすう", "planck constant", "ℏ"],
+    "tags": ["physics", "quantum"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_003",
+    "prompt": "古代メソポタミア文明のウル第三王朝で使われた、世界最古の成文法典の名前は？",
+    "type": "text",
+    "acceptedAnswers": ["ウル・ナンム法典", "うるなんむほうてん"],
+    "tags": ["history", "law"],
+    "genre": "知識", 
+    "difficulty": 5
+  },
+  {
+    "id": "k5_004",
+    "prompt": "ジェイムズ・ジョイスの「ユリシーズ」で、主人公レオポルド・ブルームの職業は？",
+    "type": "text",
+    "acceptedAnswers": ["広告代理店員", "こうこくだいりてんいん", "広告営業", "advertising"],
+    "tags": ["literature", "modernist"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_005", 
+    "prompt": "1919年のヴェルサイユ条約第231条は、ドイツに何の責任を負わせる条項として知られる？",
+    "type": "text",
+    "acceptedAnswers": ["戦争責任", "せんそうせきにん", "war guilt"],
+    "tags": ["history", "ww1"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_006",
+    "prompt": "バロック音楽の大家J.S.バッハの「ゴルトベルク変奏曲」は、何の楽器のために作曲された？",
+    "type": "text",
+    "acceptedAnswers": ["チェンバロ", "ちぇんばろ", "harpsichord", "クラヴィーア"],
+    "tags": ["music", "baroque"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_007",
+    "prompt": "分子生物学で「セントラルドグマ」と呼ばれる情報の流れは、DNA→？→タンパク質？",
+    "type": "text",
+    "acceptedAnswers": ["RNA", "rna", "ribonucleic acid"],
+    "tags": ["biology", "molecular"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_008",
+    "prompt": "古代ギリシャの哲学者アリストテレスが分類した演劇の三要素「アリストテレスの三一致」とは、時・場所と何？",
+    "type": "text",
+    "acceptedAnswers": ["筋", "すじ", "action", "行動"],
+    "tags": ["philosophy", "drama"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_009",
+    "prompt": "ナポレオン戦争後のウィーン体制を維持するために結ばれた、オーストリア・プロイセン・ロシアの三国同盟は？",
+    "type": "text",
+    "acceptedAnswers": ["神聖同盟", "しんせいどうめい", "holy alliance"],
+    "tags": ["history", "diplomacy"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "k5_010",
+    "prompt": "フェルマーの最終定理を証明した数学者アンドリュー・ワイルズが用いた主要な数学的手法は？",
+    "type": "text",
+    "acceptedAnswers": ["楕円曲線", "だえんきょくせん", "elliptic curves"],
+    "tags": ["mathematics", "proof"],
+    "genre": "知識",
+    "difficulty": 5
+  },
+  {
+    "id": "t1_001",
+    "prompt": "1 + 1 = ?",
+    "type": "text",
+    "acceptedAnswers": ["2", "に", "二"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_002",
+    "prompt": "10 - 5 = ?",
+    "type": "text",
+    "acceptedAnswers": ["5", "ご", "五"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_003",
+    "prompt": "2 × 3 = ?",
+    "type": "text",
+    "acceptedAnswers": ["6", "ろく", "六"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_004",
+    "prompt": "8 ÷ 2 = ?",
+    "type": "text",
+    "acceptedAnswers": ["4", "よん", "四"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_005",
+    "prompt": "3 + 4 = ?",
+    "type": "text",
+    "acceptedAnswers": ["7", "なな", "七"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_006",
+    "prompt": "9 - 3 = ?",
+    "type": "text",
+    "acceptedAnswers": ["6", "ろく", "六"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_007",
+    "prompt": "5 × 2 = ?",
+    "type": "text",
+    "acceptedAnswers": ["10", "じゅう", "十"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_008",
+    "prompt": "12 ÷ 3 = ?",
+    "type": "text",
+    "acceptedAnswers": ["4", "よん", "四"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_009",
+    "prompt": "6 + 2 = ?",
+    "type": "text",
+    "acceptedAnswers": ["8", "はち", "八"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t1_010",
+    "prompt": "15 - 10 = ?",
+    "type": "text",
+    "acceptedAnswers": ["5", "ご", "五"],
+    "tags": ["math", "basic"],
+    "genre": "思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "t2_001",
+    "prompt": "72 ÷ 8 = ?",
+    "type": "text",
+    "acceptedAnswers": ["9", "きゅう", "九"],
+    "tags": ["math", "division"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_002",
+    "prompt": "25 + 37 = ?",
+    "type": "text",
+    "acceptedAnswers": ["62"],
+    "tags": ["math", "addition"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_003",
+    "prompt": "12 × 7 = ?",
+    "type": "text",
+    "acceptedAnswers": ["84"],
+    "tags": ["math", "multiplication"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_004",
+    "prompt": "100 - 43 = ?",
+    "type": "text",
+    "acceptedAnswers": ["57"],
+    "tags": ["math", "subtraction"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_005",
+    "prompt": "5²= ?",
+    "type": "text",
+    "acceptedAnswers": ["25"],
+    "tags": ["math", "square"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_006",
+    "prompt": "√64 = ?",
+    "type": "text",
+    "acceptedAnswers": ["8", "はち", "八"],
+    "tags": ["math", "square root"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_007",
+    "prompt": "次の数列の？に入る数字は？ 2, 4, 8, 16, ?",
+    "type": "text",
+    "acceptedAnswers": ["32"],
+    "tags": ["math", "sequence"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_008",
+    "prompt": "15人のクラスで、男子が9人なら女子は何人？",
+    "type": "text", 
+    "acceptedAnswers": ["6", "6人", "ろく", "六"],
+    "tags": ["math", "problem solving"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_009",
+    "prompt": "時計の長針が12から3に動くのに何分かかる？",
+    "type": "text",
+    "acceptedAnswers": ["15", "15分", "じゅうごふん"],
+    "tags": ["math", "time"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t2_010",
+    "prompt": "1辺が5cmの正方形の面積は？",
+    "type": "text",
+    "acceptedAnswers": ["25", "25平方cm", "25cm²"],
+    "tags": ["math", "geometry"],
+    "genre": "思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "t3_001",
+    "prompt": "n = 10のとき、n(n+1)/2 の値は？",
+    "type": "text",
+    "acceptedAnswers": ["55"],
+    "tags": ["math", "formula"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_002",
+    "prompt": "二次方程式 x² - 5x + 6 = 0 の解の一つは？",
+    "type": "text",
+    "acceptedAnswers": ["2", "3"],
+    "tags": ["math", "quadratic"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_003",
+    "prompt": "sin 30° の値は？",
+    "type": "text",
+    "acceptedAnswers": ["1/2", "0.5", "2分の1"],
+    "tags": ["math", "trigonometry"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_004",
+    "prompt": "log₂ 8 = ?",
+    "type": "text",
+    "acceptedAnswers": ["3", "さん", "三"],
+    "tags": ["math", "logarithm"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_005",
+    "prompt": "直角三角形で、底辺3、高さ4なら斜辺の長さは？",
+    "type": "text",
+    "acceptedAnswers": ["5"],
+    "tags": ["math", "pythagorean"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_006",
+    "prompt": "円周率πの近似値は？（小数第2位まで）",
+    "type": "text",
+    "acceptedAnswers": ["3.14"],
+    "tags": ["math", "pi"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_007",
+    "prompt": "1から100までの整数の和は？",
+    "type": "text",
+    "acceptedAnswers": ["5050"],
+    "tags": ["math", "sum"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_008",
+    "prompt": "半径5cmの円の面積は？（πは3.14として）",
+    "type": "text",
+    "acceptedAnswers": ["78.5", "78.5平方cm", "78.5cm²"],
+    "tags": ["math", "circle area"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_009",
+    "prompt": "関数 y = 2x + 3 で、x = 4のときyの値は？",
+    "type": "text",
+    "acceptedAnswers": ["11"],
+    "tags": ["math", "function"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t3_010",
+    "prompt": "正八面体の面の数は？",
+    "type": "text",
+    "acceptedAnswers": ["8", "はち", "八"],
+    "tags": ["math", "geometry"],
+    "genre": "思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "t4_001",
+    "prompt": "サイコロを2つ振ったとき、和が7になる確率は？",
+    "type": "text",
+    "acceptedAnswers": ["1/6", "6分の1", "0.167"],
+    "tags": ["math", "probability"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_002",
+    "prompt": "微分 d/dx (x³) = ?",
+    "type": "text",
+    "acceptedAnswers": ["3x²", "3x^2"],
+    "tags": ["math", "calculus"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_003",
+    "prompt": "複素数 i² = ?",
+    "type": "text",
+    "acceptedAnswers": ["-1", "マイナス1"],
+    "tags": ["math", "complex numbers"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_004",
+    "prompt": "行列の掛け算で、2×3行列と3×4行列の積の次元は？",
+    "type": "text",
+    "acceptedAnswers": ["2×4", "2x4", "2掛ける4"],
+    "tags": ["math", "matrix"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_005",
+    "prompt": "∫ x dx = ? (積分定数は除く)",
+    "type": "text",
+    "acceptedAnswers": ["x²/2", "x^2/2", "2分のx²"],
+    "tags": ["math", "integration"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_006",
+    "prompt": "フィボナッチ数列で、8番目の数は？ (1,1,2,3,5,8,13,...)",
+    "type": "text",
+    "acceptedAnswers": ["21"],
+    "tags": ["math", "fibonacci"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_007",
+    "prompt": "標準正規分布N(0,1)で、68%のデータが含まれる範囲は？",
+    "type": "text",
+    "acceptedAnswers": ["-1から1", "±1", "マイナス1から1"],
+    "tags": ["math", "statistics"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_008",
+    "prompt": "正20面体の頂点の数は？",
+    "type": "text",
+    "acceptedAnswers": ["12"],
+    "tags": ["math", "polyhedron"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_009",
+    "prompt": "e^(ln 5) = ? (eは自然対数の底)",
+    "type": "text",
+    "acceptedAnswers": ["5", "ご", "五"],
+    "tags": ["math", "exponential"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t4_010",
+    "prompt": "組み合わせ C(5,2) = ?",
+    "type": "text",
+    "acceptedAnswers": ["10"],
+    "tags": ["math", "combination"],
+    "genre": "思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "t5_001",
+    "prompt": "3人の神々がいて、1人は常に真実を、1人は常に嘘を、1人はランダムに答える。「あなたは真実の神ですか？」と聞いたとき、確実に真実の神を特定できる最小質問数は？",
+    "type": "text",
+    "acceptedAnswers": ["3", "3回", "さん"],
+    "tags": ["logic", "puzzle"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_002",
+    "prompt": "無限級数 1 + 1/2 + 1/4 + 1/8 + ... の和は？",
+    "type": "text",
+    "acceptedAnswers": ["2", "に", "二"],
+    "tags": ["math", "infinite series"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_003",
+    "prompt": "オイラーの等式 e^(iπ) + ? = 0 の？は？",
+    "type": "text",
+    "acceptedAnswers": ["1", "いち", "一"],
+    "tags": ["math", "euler"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_004",
+    "prompt": "ハノイの塔で、5段の塔を移動するのに必要な最小手数は？",
+    "type": "text",
+    "acceptedAnswers": ["31"],
+    "tags": ["algorithm", "recursion"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_005",
+    "prompt": "リーマン予想で、ゼータ関数ζ(s)の非自明零点の実部は？",
+    "type": "text",
+    "acceptedAnswers": ["1/2", "0.5", "2分の1"],
+    "tags": ["math", "riemann"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_006",
+    "prompt": "四色定理では、平面上の地図を塗り分けるのに最大何色必要？",
+    "type": "text",
+    "acceptedAnswers": ["4", "よん", "四", "4色"],
+    "tags": ["math", "graph theory"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_007",
+    "prompt": "P≠NP予想において、NP完全問題の代表例として知られる「巡回セールスマン問題」の略称は？",
+    "type": "text",
+    "acceptedAnswers": ["TSP", "tsp"],
+    "tags": ["computer science", "complexity"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_008",
+    "prompt": "ゴールドバッハ予想：4以上の偶数は2つの？の和で表せる",
+    "type": "text",
+    "acceptedAnswers": ["素数", "そすう", "prime", "素数の"],
+    "tags": ["math", "number theory"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_009",
+    "prompt": "双子素数予想で「双子素数」とは、差が？である素数のペア",
+    "type": "text",
+    "acceptedAnswers": ["2", "に", "二"],
+    "tags": ["math", "prime numbers"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "t5_010",
+    "prompt": "コラッツ予想で、3n+1問題において、1に到達しない最小の正整数は現在のところ？",
+    "type": "text",
+    "acceptedAnswers": ["存在しない", "そんざいしない", "ない", "不明"],
+    "tags": ["math", "collatz"],
+    "genre": "思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h1_001",
+    "prompt": "1時間は何分？",
+    "type": "text",
+    "acceptedAnswers": ["60", "60分", "ろくじゅう", "六十"],
+    "tags": ["time", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_002", 
+    "prompt": "100円玉5枚でいくら？",
+    "type": "text",
+    "acceptedAnswers": ["500", "500円", "ごひゃく"],
+    "tags": ["money", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_003",
+    "prompt": "正三角形の角は何度？",
+    "type": "text",
+    "acceptedAnswers": ["60", "60度", "ろくじゅう"],
+    "tags": ["geometry", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_004",
+    "prompt": "水は何度で凍る？",
+    "type": "text",
+    "acceptedAnswers": ["0", "0度", "れい", "零度"],
+    "tags": ["science", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_005",
+    "prompt": "1年は何ヶ月？",
+    "type": "text",
+    "acceptedAnswers": ["12", "12ヶ月", "じゅうに", "十二"],
+    "tags": ["time", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_006",
+    "prompt": "直角は何度？",
+    "type": "text",
+    "acceptedAnswers": ["90", "90度", "きゅうじゅう"],
+    "tags": ["geometry", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_007",
+    "prompt": "1メートルは何センチ？",
+    "type": "text",
+    "acceptedAnswers": ["100", "100cm", "ひゃく"],
+    "tags": ["measurement", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_008",
+    "prompt": "円周角は中心角の何分の1？",
+    "type": "text",
+    "acceptedAnswers": ["1/2", "2分の1", "0.5", "半分"],
+    "tags": ["geometry", "circle"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_009",
+    "prompt": "1キログラムは何グラム？",
+    "type": "text",
+    "acceptedAnswers": ["1000", "1000g", "せん"],
+    "tags": ["measurement", "weight"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h1_010",
+    "prompt": "水は何度で沸騰する？",
+    "type": "text",
+    "acceptedAnswers": ["100", "100度", "ひゃく"],
+    "tags": ["science", "basic"],
+    "genre": "知識＋思考力",
+    "difficulty": 1
+  },
+  {
+    "id": "h2_001",
+    "prompt": "光の三原色は赤、緑、？",
+    "type": "text",
+    "acceptedAnswers": ["青", "あお", "blue", "ブルー"],
+    "tags": ["science", "color"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_002",
+    "prompt": "音速は約秒速何メートル？",
+    "type": "text",
+    "acceptedAnswers": ["340", "340m", "さんびゃくよんじゅう"],
+    "tags": ["physics", "sound"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_003",
+    "prompt": "地球の重力加速度は約何m/s²？",
+    "type": "text",
+    "acceptedAnswers": ["9.8", "9.8m/s²", "きゅうてんはち"],
+    "tags": ["physics", "gravity"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_004",
+    "prompt": "人間の体温は約何度？",
+    "type": "text",
+    "acceptedAnswers": ["36", "36度", "さんじゅうろく", "37", "37度"],
+    "tags": ["biology", "temperature"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_005",
+    "prompt": "1気圧は何ヘクトパスカル？",
+    "type": "text",
+    "acceptedAnswers": ["1013", "1013hpa", "せんじゅうさん"],
+    "tags": ["physics", "pressure"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_006",
+    "prompt": "正六角形の内角は何度？",
+    "type": "text",
+    "acceptedAnswers": ["120", "120度", "ひゃくにじゅう"],
+    "tags": ["geometry", "polygon"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_007",
+    "prompt": "1日は何秒？",
+    "type": "text",
+    "acceptedAnswers": ["86400", "86400秒", "はちまんろくせんよんひゃく"],
+    "tags": ["time", "calculation"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_008",
+    "prompt": "黄金比の近似値は？",
+    "type": "text",
+    "acceptedAnswers": ["1.618", "1.62", "いってんろくいちはち"],
+    "tags": ["math", "ratio"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_009",
+    "prompt": "地球から月までの距離は約何万キロ？",
+    "type": "text",
+    "acceptedAnswers": ["38", "38万", "さんじゅうはち"],
+    "tags": ["astronomy", "distance"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h2_010",
+    "prompt": "円の面積を求める公式は？",
+    "type": "text",
+    "acceptedAnswers": ["πr²", "π掛けるr²", "πr^2", "パイアールじじょう"],
+    "tags": ["geometry", "formula"],
+    "genre": "知識＋思考力",
+    "difficulty": 2
+  },
+  {
+    "id": "h3_001",
+    "prompt": "万有引力の法則を発見したニュートンが見たとされる果物は？",
+    "type": "text",
+    "acceptedAnswers": ["りんご", "リンゴ", "apple"],
+    "tags": ["science", "history"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_002",
+    "prompt": "アルキメデスの原理：物体が受ける浮力は、その物体が押しのけた？の重さに等しい",
+    "type": "text",
+    "acceptedAnswers": ["液体", "えきたい", "水", "流体"],
+    "tags": ["physics", "buoyancy"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_003",
+    "prompt": "エネルギー保存の法則で有名な式 E=mc² のcは何の速度？",
+    "type": "text",
+    "acceptedAnswers": ["光", "ひかり", "light", "光速"],
+    "tags": ["physics", "relativity"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_004",
+    "prompt": "ピタゴラスの定理：直角三角形で c²=a²+？",
+    "type": "text",
+    "acceptedAnswers": ["b²", "b^2", "びーじじょう"],
+    "tags": ["math", "theorem"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_005",
+    "prompt": "メンデルの遺伝法則で、優性遺伝と劣性遺伝の表現型比は？",
+    "type": "text",
+    "acceptedAnswers": ["3:1", "3対1", "さんたいいち"],
+    "tags": ["biology", "genetics"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_006",
+    "prompt": "ボイルの法則：一定温度で、気体の圧力と体積の関係は？",
+    "type": "text",
+    "acceptedAnswers": ["反比例", "はんぴれい", "inverse"],
+    "tags": ["chemistry", "gas law"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_007",
+    "prompt": "オームの法則：V=？×R",
+    "type": "text",
+    "acceptedAnswers": ["I", "i", "電流", "でんりゅう"],
+    "tags": ["physics", "electricity"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_008",
+    "prompt": "フックの法則：バネの伸びは加えた力に？",
+    "type": "text",
+    "acceptedAnswers": ["比例", "ひれい", "proportional"],
+    "tags": ["physics", "mechanics"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_009",
+    "prompt": "地球の自転により生じる、運動物体に働く見かけの力は？",
+    "type": "text",
+    "acceptedAnswers": ["コリオリ力", "こりおりりょく", "coriolis"],
+    "tags": ["physics", "earth"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h3_010",
+    "prompt": "ドップラー効果：音源が近づくと音の高さは？",
+    "type": "text",
+    "acceptedAnswers": ["高くなる", "たかくなる", "上がる", "あがる"],
+    "tags": ["physics", "wave"],
+    "genre": "知識＋思考力",
+    "difficulty": 3
+  },
+  {
+    "id": "h4_001",
+    "prompt": "シュレーディンガーの猫の思考実験が示そうとした量子力学の概念は？",
+    "type": "text",
+    "acceptedAnswers": ["重ね合わせ", "かさねあわせ", "superposition"],
+    "tags": ["physics", "quantum"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_002",
+    "prompt": "統計力学で、エントロピーが最大になる状態は？",
+    "type": "text",
+    "acceptedAnswers": ["平衡状態", "へいこうじょうたい", "equilibrium"],
+    "tags": ["physics", "thermodynamics"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_003",
+    "prompt": "ゲーデルの不完全性定理が証明したのは、数学体系の？",
+    "type": "text",
+    "acceptedAnswers": ["不完全性", "ふかんぜんせい", "限界", "げんかい"],
+    "tags": ["mathematics", "logic"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_004",
+    "prompt": "ダーウィンの進化論で、種の変化を促進する主要な要因は？",
+    "type": "text",
+    "acceptedAnswers": ["自然選択", "しぜんせんたく", "natural selection"],
+    "tags": ["biology", "evolution"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_005",
+    "prompt": "ケプラーの第二法則：惑星と太陽を結ぶ直線が等しい時間に描く面積は？",
+    "type": "text",
+    "acceptedAnswers": ["等しい", "ひとしい", "一定", "いってい"],
+    "tags": ["astronomy", "mechanics"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_006",
+    "prompt": "マクスウェル方程式が統合したのは、電気と？の理論",
+    "type": "text",
+    "acceptedAnswers": ["磁気", "じき", "magnetism"],
+    "tags": ["physics", "electromagnetism"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_007",
+    "prompt": "ハイゼンベルクの不確定性原理：位置と？を同時に正確に測定できない",
+    "type": "text",
+    "acceptedAnswers": ["運動量", "うんどうりょう", "momentum"],
+    "tags": ["physics", "quantum"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_008",
+    "prompt": "ベイズの定理で重要な概念「事後確率」に対し、事前に設定する確率は？",
+    "type": "text",
+    "acceptedAnswers": ["事前確率", "じぜんかくりつ", "prior"],
+    "tags": ["statistics", "probability"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_009",
+    "prompt": "フェルマーの小定理：pが素数でaがpで割り切れないとき、a^(p-1)≡？ (mod p)",
+    "type": "text",
+    "acceptedAnswers": ["1", "いち", "一"],
+    "tags": ["mathematics", "number theory"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h4_010",
+    "prompt": "ナッシュ均衡とは、どのプレイヤーも一方的に戦略を変更する？がない状態",
+    "type": "text",
+    "acceptedAnswers": ["誘因", "ゆういん", "インセンティブ", "動機"],
+    "tags": ["game theory", "economics"],
+    "genre": "知識＋思考力",
+    "difficulty": 4
+  },
+  {
+    "id": "h5_001",
+    "prompt": "量子もつれ現象で、アインシュタインが「神はサイコロを振らない」と批判した理論の創始者は？",
+    "type": "text",
+    "acceptedAnswers": ["ボーア", "ぼーあ", "bohr"],
+    "tags": ["physics", "quantum"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_002",
+    "prompt": "ホーキング放射により、ブラックホールの温度は質量に？比例する",
+    "type": "text",
+    "acceptedAnswers": ["反", "はん", "inverse", "逆"],
+    "tags": ["physics", "cosmology"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_003",
+    "prompt": "P≠NP予想の解決により得られるクレイ数学研究所の賞金は何ドル？",
+    "type": "text",
+    "acceptedAnswers": ["100万", "1000000", "ひゃくまん"],
+    "tags": ["computer science", "mathematics"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_004",
+    "prompt": "カオス理論で「バタフライ効果」を最初に提唱した気象学者は？",
+    "type": "text",
+    "acceptedAnswers": ["ローレンツ", "ろーれんつ", "lorenz"],
+    "tags": ["mathematics", "chaos"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_005",
+    "prompt": "ヒルベルト空間において、リース表現定理が成り立つための条件は？",
+    "type": "text",
+    "acceptedAnswers": ["完備性", "かんびせい", "completeness"],
+    "tags": ["mathematics", "functional analysis"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_006",
+    "prompt": "チューリング機械の停止問題が決定不可能であることを証明した手法は？",
+    "type": "text",
+    "acceptedAnswers": ["対角線論法", "たいかくせんろんぽう", "diagonalization"],
+    "tags": ["computer science", "logic"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_007",
+    "prompt": "超弦理論で、我々の宇宙の次元数は？次元とされる",
+    "type": "text",
+    "acceptedAnswers": ["11", "じゅういち", "十一"],
+    "tags": ["physics", "string theory"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_008",
+    "prompt": "ランダム行列理論で、ガウス直交アンサンブル（GOE）の固有値分布は？分布に従う",
+    "type": "text",
+    "acceptedAnswers": ["半円", "はんえん", "semicircle"],
+    "tags": ["mathematics", "random matrix"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_009",
+    "prompt": "ペアノ算術の無矛盾性を証明するのに必要な、より強い体系は？",
+    "type": "text",
+    "acceptedAnswers": ["順序数解析", "じゅんじょすうかいせき", "proof theory"],
+    "tags": ["mathematics", "logic"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
+  },
+  {
+    "id": "h5_010",
+    "prompt": "モンスター群の位数（元の個数）は約2^？",
+    "type": "text",
+    "acceptedAnswers": ["46", "よんじゅうろく", "四十六"],
+    "tags": ["mathematics", "group theory"],
+    "genre": "知識＋思考力",
+    "difficulty": 5
   }
 ]

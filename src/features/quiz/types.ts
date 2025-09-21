@@ -4,6 +4,8 @@ export type Question = {
   type: 'text';
   acceptedHash: string[];
   tags?: string[];
+  genre: '知識' | '思考力' | '知識＋思考力';
+  difficulty: 1 | 2 | 3 | 4 | 5;
 };
 
 export type Answer = {

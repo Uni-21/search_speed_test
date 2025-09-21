@@ -9,6 +9,10 @@
   let answerForm: AnswerForm;
   let showCorrectNotification = false;
   let showIncorrectNotification = false;
+  let showSkipConfirmation = false;
+  let correctTimeoutId: number | null = null;
+  let incorrectTimeoutId: number | null = null;
+  let skipTimeoutId: number | null = null;
 
   $: session = $quizStore;
   $: currentQuestion = session.questions[session.currentIndex];
@@ -29,24 +33,40 @@
     
     if (currentAnswer.correct) {
       // 正解時は通知を表示してすぐに次に進む
+      if (correctTimeoutId) clearTimeout(correctTimeoutId);
       showCorrectNotification = true;
-      setTimeout(() => {
+      correctTimeoutId = setTimeout(() => {
         showCorrectNotification = false;
+        correctTimeoutId = null;
       }, 2000);
       handleNext();
     } else {
       // 不正解時もトースト通知で表示
+      if (incorrectTimeoutId) clearTimeout(incorrectTimeoutId);
       showIncorrectNotification = true;
-      setTimeout(() => {
+      incorrectTimeoutId = setTimeout(() => {
         showIncorrectNotification = false;
+        incorrectTimeoutId = null;
       }, 3000); // 不正解は少し長めに表示
     }
   }
 
   function handleNext() {
+    console.log('handleNext called, current index:', session.currentIndex);
     quizStore.next();
     
-    if ($quizStore.status !== 'finished') {
+    const updatedSession = $quizStore;
+    console.log('After next(), session status:', updatedSession.status);
+    console.log('After next(), current index:', updatedSession.currentIndex);
+    
+    if (updatedSession.status === 'finished') {
+      console.log('Quiz finished, should navigate to result');
+      console.log('Final session:', updatedSession);
+      // クイズ完了時に自動で結果画面に遷移
+      setTimeout(() => {
+        goto('/result');
+      }, 1000); // 1秒後に遷移（完了メッセージを見せるため）
+    } else {
       // フォーカスを次の問題用にリセット
       setTimeout(() => {
         if (answerForm) {
@@ -57,12 +77,35 @@
   }
 
   function goToResult() {
+    console.log('goToResult called, navigating to /result');
     goto('/result');
   }
 
-  function handleSkip() {
+  function handleSkipConfirm() {
+    if (skipTimeoutId) clearTimeout(skipTimeoutId);
+    showSkipConfirmation = true;
+    skipTimeoutId = setTimeout(() => {
+      showSkipConfirmation = false;
+      skipTimeoutId = null;
+    }, 5000); // 5秒後に自動で消える
+  }
+
+  function confirmSkip() {
+    if (skipTimeoutId) {
+      clearTimeout(skipTimeoutId);
+      skipTimeoutId = null;
+    }
+    showSkipConfirmation = false;
     quizStore.skip();
     handleNext();
+  }
+
+  function cancelSkip() {
+    if (skipTimeoutId) {
+      clearTimeout(skipTimeoutId);
+      skipTimeoutId = null;
+    }
+    showSkipConfirmation = false;
   }
 </script>
 
@@ -81,6 +124,16 @@
     {#if showIncorrectNotification}
       <div class="incorrect-notification">
         ❌ 不正解です
+      </div>
+    {/if}
+    
+    {#if showSkipConfirmation}
+      <div class="skip-confirmation">
+        <div class="skip-message">この問題をスキップしますか？</div>
+        <div class="skip-buttons">
+          <button class="skip-confirm-btn" on:click={confirmSkip}>はい</button>
+          <button class="skip-cancel-btn" on:click={cancelSkip}>いいえ</button>
+        </div>
       </div>
     {/if}
     
@@ -105,7 +158,7 @@
         <AnswerForm 
           bind:this={answerForm}
           on:answer={handleAnswer}
-          on:skip={handleSkip}
+          on:skipConfirm={handleSkipConfirm}
         />
       {/if}
     </div>
@@ -168,6 +221,61 @@
       opacity: 1;
       transform: translateX(-50%) translateY(0);
     }
+  }
+
+  .skip-confirmation {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9800;
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1000;
+    animation: slideDown 0.3s ease-out;
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+    text-align: center;
+    min-width: 300px;
+  }
+
+  .skip-message {
+    margin-bottom: 1rem;
+  }
+
+  .skip-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .skip-confirm-btn, .skip-cancel-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .skip-confirm-btn {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .skip-confirm-btn:hover {
+    background-color: #da190b;
+  }
+
+  .skip-cancel-btn {
+    background-color: white;
+    color: #333;
+  }
+
+  .skip-cancel-btn:hover {
+    background-color: #f5f5f5;
   }
 
   .header {

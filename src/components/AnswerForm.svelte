@@ -5,6 +5,7 @@
   const dispatch = createEventDispatcher<{
     answer: { value: string };
     skip: void;
+    skipConfirm: void;
     next: void;
   }>();
 
@@ -19,10 +20,8 @@
   }
 
   function handleSkip() {
-    if (confirm('この問題をスキップしますか？')) {
-      dispatch('skip');
-      inputValue = '';
-    }
+    dispatch('skipConfirm');
+    inputValue = '';
   }
 
   function focusInput() {
